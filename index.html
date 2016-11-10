@@ -39,24 +39,17 @@
 	    	var b = $("#b").val();
     		var c = $("#c").val();
     		var x1, x2;
-
-    		var d = b * b - 4*a*c;
-if(d>0) {
-           x1=(-b + math.sqrt(d)) / (a*2) 
-		   x2=(-b - math.sqrt(d)) / (a*2)} 
-      else if (d<0) {
-	      alert('нет корней')
-		     }
-	  else if (d==0)	{
-               x1=(-b)/ (2*a) 
-        }			  
-
-
- 
-
-
-
-    		//-----------------------
+			
+		var d = b * b  - 4 * a * c;
+		
+		if(d > 0) {
+			x1 = (-b + Math.sqrt(d)) / (2 * a);
+			x2 = (-b - Math.sqrt(d)) / (2 * a);
+		}
+		else if(d == 0) {
+			x1 = (-b) / (2 * a);
+		}
+			
 
     		if(x1 != undefined && x2 != undefined)
     			alert("Два корня: " +  x1 + " " + x2);	
